@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Space+Mono|Titillium+Web:200')
+
+$font-one: 'Titillium Web', sans-serif
+$font-two: 'Space Mono', monospace
+$font-three: 'Roboto', sans-serif
+$orange: #FF5500
+$purple: #510063
+$other-purple: #cdafe0
+
+body
+	margin: 0px
+
+.top-banner
+	width: 100%
+	height: 70px
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	.top-banner-link
+		padding-right: 20px
+		text-decoration: none
+		color: $orange
+		font-family: $font-three
+		font-size: 13px
+		letter-spacing: 1px
+		padding-bottom: 15px
+	svg
+		width: 20px
+		height: 20px
+		position: relative
+		top: 0
+		fill: currentColor
+	#top-banner-right-item
+		padding-right: 40px
+
+.nav-bar
+	width: 100%
+	height: 80px
+	background-color: $orange
+	display: flex
+	align-items: center
+	justify-content: space-between
+	a
+		text-decoration: none
+		color: white
+		font-family: $font-two
+		height: 100%
+		transition: .3s background-color
+	.nav-bar-title
+		text-decoration: bold
+		font-size: 30px
+		padding-left: 46px
+	.nav-bar-elements
+		font-size: 20px
+		display: flex
+		height: 100%
+		align-items: center
+		list-style-type: none
+		a
+			font-family: $font-one
+		.down-arrow-icon
+			color: white
+		#search-icon
+			color: white
+			padding-right: 46px
+
+.nav-bar-link-wrapper
+	height: 100%
+	width: 108px
+	margin: 0px
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+		letter-spacing: 2px
+
+.nav-bar-elements li ul
+	position: absolute
+	display: none
+	width: inherit
+
+.nav-bar-elements li:hover ul
+	display: block
+
+.nav-bar-elements li ul li
+	display: block
+	width: 300px
+	border: 1px solid $other-purple
+	border-bottom: none
+	height: 80px
+	line-height: 50px
+	font-size: 1.4em
+	display: inline-block
+	margin-left: -120px
+
+.nav-bar-elements li ul li a
+	background-color: $purple
+
+.nav-bar-elements li ul li a:hover
+	background-color: $other-purple
+
+.nav-bar-link-wrapper a:hover
+	background-color: $purple
+
+.index-banner
+	width: 100%
+	height: 320px
+	background-color: $purple
+	color: white
+	font-family: $font-one
+	display: flex
+	justify-content: space-between
+	h1
+		margin-top: 0px
+		font-size: 36px
+		padding-left: 46px
+		font-family: $font-three
+	p
+		color: $other-purple
+		font-size: 15px
+		padding-left: 46px
+
+.index-banner-text-box
+	width: 720px
+	padding-top: 46px
+
+.index-banner-image
+	width: 400px
+	height: 240px
+	margin-right: 40px
+	margin-top: 30px
+	img
+		max-height: 100%
+		max-width: 100%
+
+.index-banner-button
+	width: 150px
+	background-color: $orange
+	border-radius: 30px
+	height: 45px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-family: $font-three
+	margin-left: 46px
+	margin-top: 30px
+
+.icon-row
+	display: flex
+	justify-content: space-between
+
+.icon-element 
+	margin-top: 70px
+	margin-bottom: 70px
+	width: 360px
+	display: flex
+	flex-direction: row
+	img
+		display: inline-block
+	h1
+		font-family: $font-three
+		font-size: 18px
+		color: $purple
+		display: inline-block
+		margin-bottom: 10px
+	p
+		font-size: 15px
+		font-family: $font-one
+		color: $purple
+		display: inline-block
+	a
+		margin: 0px
+		color: $orange
+
+.icon-element-text *
+	margin: 0px 0px 0px 20px
+
+#icon-element-one
+	margin-left: 46px
+
+#icon-element-three
+	margin-right: 46px
+
+.panel-element
+	height: 390px
+	width: 360px
+	border-radius: 5px
+	h1
+		color: white
+		font-size: 18px
+		margin-left: 30px
+		margin-right: 30px
+		margin-top: 40px
+		font-family: $font-three
+	p
+		color: white
+		font-size: 15px
+		margin-left: 30px
+		margin-right: 30px
+		font-family: $font-one
+	a
+		margin-left: 30px
+		margin-right: 30px
+		color: white
+		font-size: 15px
+		font-family: $font-one
+	img
+		max-width: 100%
+		max-height: 200px
+
+.panel-a-background
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-radius: 0px 0px 5px 5px
+
+.panel-row
+	display: flex
+	justify-content: space-between
+	padding-bottom: 70px
+
+#panel-element-one
+	background-color: #FF5500
+	margin-left: 46px
+	.panel-a-background
+		background-color: #E04B00
+		width: 100%
+		height: 72px
+
+#panel-element-two
+	background-color: #FF6600
+	.panel-a-background
+		background-color: #E05A00
+		width: 100%
+		height: 72px
+		display: relative
+		bottom: 0px
+
+#panel-element-three
+	background-color: #FF7700
+	margin-right: 46px
+	.panel-a-background
+		background-color: #E06900
+		width: 100%
+		height: 72px
+
+.ad-row
+	width: 100%
+	background-color: $purple
+	height: 290px
+	display: flex
+	align-items: center
+	margin-bottom: 70px
+	img
+		padding-left: 46px
+		padding-right: 20px
+		max-height: 180px
+		max-width: 160px
+	.ad-row-text
+		width: 570px
+		h1
+			font-family: $font-three
+		p
+			font-family: $font-one
+	.ad-button
+		color: white
+		background-color: $orange
+		width: 200px
+		height: 45px
+		border-radius: 25px
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 20px
+		margin-left: 200px
+		font-family: $font-one
+
+.ad-row *
+	color: white
